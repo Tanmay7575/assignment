@@ -1,0 +1,76 @@
+POST http://localhost:8080/api/user/register HTTP/1.1
+content-type: application/json
+
+{
+   "name":"Tanmay khedekar",
+   "email":"rushi@gmail.com",
+   "password":"12345678",
+   "role":"admin"
+}
+
+###
+
+POST http://localhost:8080/api/user/login HTTP/1.1
+content-type: application/json
+
+{
+    "email":"fake@gmail.com",
+   "password":"12345678"
+}
+
+###
+GET http://localhost:8080/api/user/ HTTP/1.1
+content-type: application/json
+
+###
+
+GET http://localhost:8080/api/user/validate_token/ HTTP/1.1
+content-type: application/json
+
+###
+
+POST http://localhost:8080/api/task/createTask HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Build Task size",
+  "description": "Learn JWT + Express"
+}
+
+###
+
+GET http://localhost:8080/api/task/ HTTP/1.1
+content-type: application/json
+###
+GET http://localhost:8080/api/task/userBlog HTTP/1.1
+content-type: application/json
+
+{
+       
+}
+
+### 
+
+DELETE http://localhost:8080/api/task/68deae2d8811b6870bdec875 HTTP/1.1
+content-type: application/json
+
+
+###
+GET  http://localhost:8080/api/task/ HTTP/1.1
+content-type: application/json
+
+
+
+###
+
+PUT http://localhost:8080/api/task/68df5bd7fd9055b67e0a554d HTTP/1.1
+content-type: application/json
+
+{
+   "title":"new updated ",
+   "description":"new to see you all"
+}
+
+
+
+
