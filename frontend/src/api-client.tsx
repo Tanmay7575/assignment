@@ -3,7 +3,7 @@
 import type { SignInFormData } from "./pages/Login";
 import type { RegisterFormData } from "./pages/Register";
 
-const API_URL="http://localhost:8080"
+const API_URL="https://assignment-back-gqny.onrender.com"
 
 export const handleRegister=async(formData:RegisterFormData)=>{
     try{
