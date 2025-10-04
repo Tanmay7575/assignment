@@ -26,7 +26,7 @@ app.use(cookieParser());
 
 
 app.use(cors({
-  origin:'https://assignment-front-oqsh.onrender.com',
+  origin:'http://localhost:5173',
   credentials:true,
 }));
 
