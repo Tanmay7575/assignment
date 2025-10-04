@@ -1,0 +1,774 @@
+{
+	"info": {
+		"_postman_id": "7435ae9f-346c-42bf-85b6-a2f2ba67701f",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40339495"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "This POST endpoint is used to register a new user in the system. The request body must include the user's name, email, password, and role. The role defines the user's access level, such as admin or regular user. This endpoint validates the input and creates a new user account upon successful registration."
+			},
+			"response": [
+				{
+					"name": "200 ok",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\":\"T khedekar\",\r\n   \"email\":\"rakhi@gmail.com\",\r\n   \"password\":\"123432323\",\r\n   \"role\":\"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "https://assignment-front-oqsh.onrender.com"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGUxM2U1MzZmYzA2NjRkODhlZjhlYWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTk1OTIwMjAsImV4cCI6MTc1OTY3ODQyMH0.qzsCTiXP2bhlBtc7hHLt7lX5mYVn6Qiat1QIV6BS8Tc; Max-Age=86400; Path=/; Expires=Sun, 05 Oct 2025 15:33:40 GMT; HttpOnly; SameSite=None"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "248"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f8-/EjB3qqKjbddLdKw/qg2tQNBclM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Oct 2025 15:33:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User registerd successfully\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGUxM2U1MzZmYzA2NjRkODhlZjhlYWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTk1OTIwMjAsImV4cCI6MTc1OTY3ODQyMH0.qzsCTiXP2bhlBtc7hHLt7lX5mYVn6Qiat1QIV6BS8Tc\"\n}"
+				},
+				{
+					"name": "Register User",
+					"originalRequest": {
+						"method": "GET",
+						"header": []
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "200ok",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"email\":\"rakhi@gmail.com\",\r\n   \"password\":\"123432323\",\r\n   \"role\":\"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "https://assignment-front-oqsh.onrender.com"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGUxM2U1MzZmYzA2NjRkODhlZjhlYWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTk1OTIxNDksImV4cCI6MTc1OTY3ODU0OX0.B0-c06YmS9op5EfRKfg2yJQOaw-XN-TrJC1mztMh-6I; Max-Age=86400; Path=/; Expires=Sun, 05 Oct 2025 15:35:49 GMT; HttpOnly; SameSite=None"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "242"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f2-BG1apDwoo+cEDDkTnHFwXLxr0Zk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Oct 2025 15:35:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"loged in successfully\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OGUxM2U1MzZmYzA2NjRkODhlZjhlYWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NTk1OTIxNDksImV4cCI6MTc1OTY3ODU0OX0.B0-c06YmS9op5EfRKfg2yJQOaw-XN-TrJC1mztMh-6I\"\n}"
+				},
+				{
+					"name": "User Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": []
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "200 ok",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "https://assignment-front-oqsh.onrender.com"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3483"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d9b-Ew/UWrlvQ4WNdY/dxqfvvu01pUE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Oct 2025 15:36:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"role\": \"user\",\n        \"_id\": \"68961012d22c4cf8617061d4\",\n        \"name\": \"Tanmay khedekar\",\n        \"email\": \"abc@gmail.com\",\n        \"password\": \"32434244fvfbfvfg\",\n        \"__v\": 0\n    },\n    {\n        \"role\": \"user\",\n        \"_id\": \"6896125556eafea1a9012f71\",\n        \"name\": \"Tanmay khedekar\",\n        \"email\": \"abccc@gmail.com\",\n        \"password\": \"$2b$10$7iMMPPwKJXcrAEjl6BWxfecQuF3frJh1dlyzELf8HoIcxiLbLo4KS\",\n        \"__v\": 0\n    },\n    {\n        \"role\": \"user\",\n        \"_id\": \"68970bec9fe9ff6f87f8c4c8\",\n        \"name\": \"tanmay\",\n        \"email\": \"rakesh@gmail.com\",\n        \"password\": \"$2b$10$GvGN6ZWW90aiLDfB8QiFEOlnxlushYaHDbiNIq6uwySVDeRXlYiJq\",\n        \"__v\": 0\n    },\n    {\n        \"role\": \"user\",\n        \"_id\": \"68970dd002cbe883d8ad8afc\",\n        \"name\": \"tanmay\",\n        \"email\": \"rakes@gmail.com\",\n        \"password\": \"$2b$10$ei1ZoF5IExT/A0/6iYQ.7OydLk9anwB4ifwZFjVZiREYwG8/BZQOO\",\n        \"__v\": 0\n    },\n    {\n        \"role\": \"user\",\n        \"_id\": \"68971f9e86806dcf7e86003d\",\n        \"name\": \"zfrgregcgr\",\n        \"email\": \"fefe@gmail.com\",\n        \"password\": \"$2b$10$cOvd7Qs8fR0HUfqhjYqjieAOX24ImvR5TJUpucne4av44YhzYn.Ke\",\n        \"__v\": 0\n    },\n    {\n        \"role\": \"user\",\n        \"_id\": \"6898114e53710673f5b0eb3e\",\n        \"name\": \"tanmay\",\n        \"email\": \"fake@gmail.com\",\n        \"password\": \"$2b$10$z8dT2F6/xthQsFQu7QOFGuEHJ.2E8B.UOyEZLjibFg5xEEvWCjrC.\",\n        \"__v\": 0\n    },\n    {\n        \"role\": \"user\",\n        \"_id\": \"68d7d11be7d3b1b4edb30153\",\n        \"name\": \"Tanmay\",\n        \"email\": \"a@gmail.com\",\n        \"password\": \"$2b$10$uxRyCFIZKfvSkO8j0pAOTu1BaJ./37ZGHmtABE0WBw6aEewQCZfA2\",\n        \"__v\": 0\n    },\n    {\n        \"role\": \"user\",\n        \"_id\": \"68d7d18fe7d3b1b4edb30158\",\n        \"name\": \"Tanmay1234\",\n        \"email\": \"Tanmay@gmail.com\",\n        \"password\": \"$2b$10$Fm.Czkuz/xN62P.fDOlntunbHtfctuXj1ycCn0BJ1alfLob03Aiei\",\n        \"__v\": 0\n    },\n    {\n        \"role\": \"user\",\n        \"_id\": \"68d7da9e9a87a852d2b67a3d\",\n        \"name\": \"name\",\n        \"email\": \"Tanmay123@gmail.com\",\n        \"password\": \"$2b$10$6pR/Ep3v6TZTQhqerht22eUgRoqCoYv6Dbamu4eClcJ7Hz4rJBRvS\",\n        \"__v\": 0\n    },\n    {\n        \"role\": \"user\",\n        \"_id\": \"68d7ea12f1357a4ef212c2f3\",\n        \"name\": \"Tanmay\",\n        \"email\": \"Khedekar@gmail.com\",\n        \"password\": \"$2b$10$WTwM7CXJIz1BRn0y/dNebu17MJXnP.hf118Ni.7wKN/EgP4pdrx/S\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68de27d677ca9e16a777bec7\",\n        \"name\": \"Tanmay khedekar\",\n        \"email\": \"ab1@gmail.com\",\n        \"password\": \"$2b$10$5hBu4bQy5VC4MLNV/sGZJu2b18d3ZefZmdMPxXfweCu0wMkhuCfbC\",\n        \"role\": \"user\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68de27f977ca9e16a777becc\",\n        \"name\": \"Tanmay khedekar\",\n        \"email\": \"ab2@gmail.com\",\n        \"password\": \"$2b$10$ZKlxGsFpto4At5mKuAwC.ucWhopwvM/76hmUtjvfM3HYBB47ZYlAy\",\n        \"role\": \"admin\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68de370e6e39fb1880deff5a\",\n        \"name\": \"Tanmay khedekar\",\n        \"email\": \"ab@gmail.com\",\n        \"password\": \"$2b$10$.Mz/sXTbF7ufw85/TZG3E.5.4/dhHJRkHNsXOtGg0SMfzyNHyATZa\",\n        \"role\": \"admin\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68de37c9286219aa0d3ac090\",\n        \"name\": \"Tanmay khedekar\",\n        \"email\": \"abss@gmail.com\",\n        \"password\": \"$2b$10$IqOH2wOwQlq2Lki03nqy1OrOwRqah8uH82TtaEgLrKQ2dvEIaSBMS\",\n        \"role\": \"admin\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68de721ccb9a9242e1d480c1\",\n        \"name\": \"Rahul\",\n        \"email\": \"Rahuk@gmail.com\",\n        \"password\": \"$2b$10$390UFkiOwvuLRQPNOiHuH.8gE7ToAPKFJXtuUDacHUp7ZM/O6K3Lq\",\n        \"role\": \"user\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68de725fcb9a9242e1d480c7\",\n        \"name\": \"Rakesh\",\n        \"email\": \"Rakesh@gmail.com\",\n        \"password\": \"$2b$10$GL2ezoucAkkTHG.mrsYfaeJkD6Q/49hbA1FiRBqZGfUFfWvZXTa3u\",\n        \"role\": \"user\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68df990862776c26c17413e3\",\n        \"name\": \"Tanmay khedekar\",\n        \"email\": \"rushi@gmail.com\",\n        \"password\": \"$2b$10$pk/UrtIZuKkxthnx.M94Zuvm8gO8nhf9hz7ldPH3fXElLqRJ/VHyC\",\n        \"role\": \"admin\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68dfb16cb347017be6c61d24\",\n        \"name\": \"sds\",\n        \"email\": \"ds@gmail.com\",\n        \"password\": \"$2b$10$hJlhhzzEWffd37VFO2YNv.t0OC7H8aghhTij0wHLbFlWWY0i6jN8.\",\n        \"role\": \"user\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68dff473f34a220738aa2f79\",\n        \"name\": \"grdveerbg\",\n        \"email\": \"ygy@vtvtv.com\",\n        \"password\": \"$2b$10$hu/64knq4aDFS9QY3wFwOOtkFHXuw5vkz1oIWJIWMO0gPu1mUGgHG\",\n        \"role\": \"user\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68e13e536fc0664d88ef8ead\",\n        \"name\": \"T khedekar\",\n        \"email\": \"rakhi@gmail.com\",\n        \"password\": \"$2b$10$KUgZM7XkMD6NXx39wRNCROLd7Mw/LMRZLpdtQ84fJ/MXa7/bwptbq\",\n        \"role\": \"admin\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Validate Tokan",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "200ok",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/validate_token/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"validate_token",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "https://assignment-front-oqsh.onrender.com"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"34-C03z95lhrYckGFAeKmWMfqqlwEk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Oct 2025 15:36:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userId\": \"68e13e536fc0664d88ef8ead\",\n    \"role\": \"admin\"\n}"
+				},
+				{
+					"name": "Validate Tokan",
+					"originalRequest": {
+						"method": "GET",
+						"header": []
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "Create Task",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Session Based API\",\r\n  \"description\": \"To manage the session lifecycle, I'd use the express-session middleware. It's a key component of this design. It handles the creation and management of sessions and attaches a req.session object to every request. This object holds the session data, making it easy to access user information throughout the application.For a production environment, I'd configure express-session to use a dedicated session store like Connect-Mongo (for MongoDB) or Connect-Redis (for Redis) instead of the default in-memory store. This ensures that session data persists even if the server restarts or if the application scales horizontally across multiple instances.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/task/createTask",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"task",
+								"createTask"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "https://assignment-front-oqsh.onrender.com"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "819"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"333-u0lhGagkHzg5Qvydg6h+MkTMPpE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Oct 2025 15:37:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Task created successfully\",\n    \"task\": {\n        \"title\": \"Session Based API\",\n        \"description\": \"To manage the session lifecycle, I'd use the express-session middleware. It's a key component of this design. It handles the creation and management of sessions and attaches a req.session object to every request. This object holds the session data, making it easy to access user information throughout the application.For a production environment, I'd configure express-session to use a dedicated session store like Connect-Mongo (for MongoDB) or Connect-Redis (for Redis) instead of the default in-memory store. This ensures that session data persists even if the server restarts or if the application scales horizontally across multiple instances.\",\n        \"userId\": \"68e13e536fc0664d88ef8ead\",\n        \"_id\": \"68e13f2c6fc0664d88ef8eb4\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Tasks",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "200 oK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/task/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"task",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "https://assignment-front-oqsh.onrender.com"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1703"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6a7-TzSPFRSwQsqpnxh6A2n1svW5GAk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Oct 2025 15:37:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"68de3c1b9673f28a96311a25\",\n        \"title\": \"Build Task API\",\n        \"description\": \"Learn JWT + Expressddsd\",\n        \"userId\": {\n            \"role\": \"user\",\n            \"_id\": \"6896125556eafea1a9012f71\",\n            \"name\": \"Tanmay khedekar\"\n        },\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68de3ec99673f28a96311a2a\",\n        \"title\": \"Build Task size\",\n        \"description\": \"Learn JWT + Express\",\n        \"userId\": {\n            \"role\": \"user\",\n            \"_id\": \"6896125556eafea1a9012f71\",\n            \"name\": \"Tanmay khedekar\"\n        },\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68df5bd7fd9055b67e0a554d\",\n        \"title\": \"fdfxdxd\",\n        \"description\": \"dffdfxdxd\",\n        \"userId\": {\n            \"role\": \"user\",\n            \"_id\": \"6898114e53710673f5b0eb3e\",\n            \"name\": \"tanmay\"\n        },\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68dfab13af63bae4abde5fad\",\n        \"title\": \"xtece\",\n        \"description\": \"cwervewcrecxc  re\",\n        \"userId\": {\n            \"_id\": \"68df990862776c26c17413e3\",\n            \"name\": \"Tanmay khedekar\",\n            \"role\": \"admin\"\n        },\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68dfb530a812a14aab87149f\",\n        \"title\": \"rdrd\",\n        \"description\": \"cerecrcrer\",\n        \"userId\": {\n            \"_id\": \"68df990862776c26c17413e3\",\n            \"name\": \"Tanmay khedekar\",\n            \"role\": \"admin\"\n        },\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"68e13f2c6fc0664d88ef8eb4\",\n        \"title\": \"Session Based API\",\n        \"description\": \"To manage the session lifecycle, I'd use the express-session middleware. It's a key component of this design. It handles the creation and management of sessions and attaches a req.session object to every request. This object holds the session data, making it easy to access user information throughout the application.For a production environment, I'd configure express-session to use a dedicated session store like Connect-Mongo (for MongoDB) or Connect-Redis (for Redis) instead of the default in-memory store. This ensures that session data persists even if the server restarts or if the application scales horizontally across multiple instances.\",\n        \"userId\": {\n            \"_id\": \"68e13e536fc0664d88ef8ead\",\n            \"name\": \"T khedekar\",\n            \"role\": \"admin\"\n        },\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Fetch User Blog With Login Validation",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "200 ok",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/task/userBlog",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"task",
+								"userBlog"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "https://assignment-front-oqsh.onrender.com"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "774"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"306-f02FhL7wQcBeoX1ix3hsWi1usj8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Oct 2025 15:37:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"68e13f2c6fc0664d88ef8eb4\",\n        \"title\": \"Session Based API\",\n        \"description\": \"To manage the session lifecycle, I'd use the express-session middleware. It's a key component of this design. It handles the creation and management of sessions and attaches a req.session object to every request. This object holds the session data, making it easy to access user information throughout the application.For a production environment, I'd configure express-session to use a dedicated session store like Connect-Mongo (for MongoDB) or Connect-Redis (for Redis) instead of the default in-memory store. This ensures that session data persists even if the server restarts or if the application scales horizontally across multiple instances.\",\n        \"userId\": \"68e13e536fc0664d88ef8ead\",\n        \"__v\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Delete Blog By Valid User",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "200 ok",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/task/68e13f2c6fc0664d88ef8eb4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"task",
+								"68e13f2c6fc0664d88ef8eb4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "https://assignment-front-oqsh.onrender.com"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "29"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1d-VMAKDkuuuhP+vzdDhMofGcKoDw4\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Oct 2025 15:39:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"task is deleted\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update User Task",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "This PUT request updates an existing user task identified by the task ID in the URL path. The endpoint expects a JSON body with 'title' and 'description' fields to modify the task's details. Use this request to change the title and description of a specific task by providing the task ID in the URL and the updated data in the request body."
+			},
+			"response": [
+				{
+					"name": "200 ok",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"title\":\"new updated \",\r\n   \"description\":\"new to see you allccrecec\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/task/68e13f2c6fc0664d88ef8eb4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"task",
+								"68e13f2c6fc0664d88ef8eb4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "https://assignment-front-oqsh.onrender.com"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "197"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c5-lXp7UAxNo/s9lc+X1zXKylLs/UM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Oct 2025 15:38:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Blog Updated Successfully\",\n    \"updatedTask\": {\n        \"_id\": \"68e13f2c6fc0664d88ef8eb4\",\n        \"title\": \"new updated \",\n        \"description\": \"new to see you allccrecec\",\n        \"userId\": \"68e13e536fc0664d88ef8ead\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		}
+	]
+}
